@@ -1,0 +1,12 @@
+.nav-item {
+    li {
+    position: relative;
+    display: inline-table;
+    margin-left: 50px;
+    &:hover {
+      .menu-item {
+        display: block;
+      }
+    }
+    }
+}

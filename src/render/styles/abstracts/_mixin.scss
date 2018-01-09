@@ -1,0 +1,10 @@
+@mixin left-right($top, $left, $width, $height){
+  width: $width;
+  height: $height;
+  margin-top: $top;
+  margin-left: $left;
+}
+@mixin component-header-position ($m-left, $m-right){
+  margin-left: $m-left;
+  margin-top: $m-right;
+}

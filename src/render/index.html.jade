@@ -1,0 +1,73 @@
+doctype html
+html
+    head
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css", integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp", crossorigin="anonymous")
+        link(rel="stylesheet", href="styles/main.css")
+        title Dealsy web
+    body
+        header
+            h1.logo
+                a(href="#") DEALSY
+            nav
+                ul.nav-item
+                    li
+                        a(href="#") Home
+                        ul.menu-item
+                            li
+                                a(href="#") Home Deals V1
+                                a(href="#") Home Deals V2
+                    li
+                        a(href="#") Coupons & Deals
+                        ul.menu-item
+                            li
+                                a(href="#") Category
+                                a(href="#") Store
+                                a(href="#") Store Single
+                                a(href="#") Submit Coupon
+                    li
+                        a(href="#") Blog
+                    li
+                        a(href="#") Admin
+                        ul.menu-item
+                            li
+                                a(href="#") Dashboard
+                                a(href="#") Use Profile
+                                a(href="#") Submit Coupon
+                                a(href="#") Login
+            .search-box
+                img(src="./../image/search-box.png", alt="")
+                .dropdow-search
+                  .group-search
+                    input(type="text", class="input-search" placeholder="Search...")
+                    button.btn-search
+                      img(src="./../image/search-box.png", alt="")
+        .banner
+            h2 Best Deals & Coupons
+            p.line1 We have 12569 offers from 6122 stores
+            p.line2 Start saving now
+        .advance-search
+            .form-search
+                form(action="#" method="POST")
+                    select(class="form-control" id="option-search")
+                        option Browser By Catergory
+                        option Appearel
+                        option Books
+                        option Personal Care
+                        option Education
+                        option Beverage
+                    input(type="text",class="form-control",placeholder="Search for store")
+                    button(class="btn btn-default", type="button")
+                        i SEARCH
+        .carousel
+            .col-sm-1.btn-left
+                img(src='./../image/left.png', alt="")
+            .list-image.col-sm-10
+                img(class="col-sm-2 col-sm-offset-1", src="./../image/1.jpg")
+                img(class="col-sm-2", src="./../image/2.jpg")
+                img(class="col-sm-2", src="./../image/3.jpg")
+                img(class="col-sm-2", src="./../image/4.jpg")
+                img(class="col-sm-2", src="./../image/5.jpg")                    
+            .col-sm-1.btn-right
+                img(src='./../image/right.png', alt="")
+!= getBlock('scripts').toHTML()

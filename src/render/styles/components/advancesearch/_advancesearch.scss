@@ -1,0 +1,30 @@
+.advance-search {
+  .form-search {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -60px;
+    text-align: center;
+    background: #FF255C;
+    border-radius: 5px;
+    form {
+      select {
+        background: transparent;
+        width: 540px;
+        height: 45px;
+        display: inline-block;
+      }
+      input {
+        background: transparent;
+        display: inline-block; 
+        width: 350px;
+        height: 45px;
+      }
+      button {
+        height: 45px;
+        width: 115px;
+      }
+    }
+  }
+}

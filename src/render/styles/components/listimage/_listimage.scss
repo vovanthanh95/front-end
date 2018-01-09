@@ -1,0 +1,12 @@
+.carousel {
+  margin-top: 30px;
+  img {
+    margin: 17px;
+  }
+  .btn-left img{
+    @include left-right(65px,65px,10px,20px);
+  }
+  .btn-right img{
+    @include left-right(65px,0px,10px,20px);
+  }
+}

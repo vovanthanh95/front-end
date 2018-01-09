@@ -1,0 +1,14 @@
+header {
+  background: $cl-bg-header;
+  position: relative;
+  padding-bottom: 20px;
+  .logo {
+    padding-top: 20px;
+  }
+  nav {
+    @include component-header-position (630px, -35px);
+  }
+  .search-box {
+    @include component-header-position (1110px, -40px);
+  }
+}
